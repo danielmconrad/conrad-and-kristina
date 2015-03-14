@@ -1,4 +1,5 @@
 @import "./fonts"
+@import "./colors"
 
 html
 body
@@ -9,7 +10,8 @@ body
   padding: 0
 
 body
-  background: #f0eeea
+  background: $colorMain
+  @extends $fontPenna
 
 .banner
   background: white
@@ -17,6 +19,7 @@ body
   margin: 8em 0 0
   padding: 5em
   text-align: center
+  color: $colorMainDark
 
 h1
   @extends $fontQuickier
@@ -25,9 +28,12 @@ h1
   margin: 0.5em
   padding: 0.5em
   border-bottom: 1px solid #f0eeea
+  color: black
 
 h2
-  @extends $fontPenna
   font-size: 4em
   font-weight: normal
   line-height: 1.37em
+
+p
+  font-size: 3em
