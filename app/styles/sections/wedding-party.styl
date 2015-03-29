@@ -1,0 +1,46 @@
+@import "../variables"
+
+.wedding-party
+  .person
+    margin-bottom: 5em
+
+    @media $mqTablet
+      margin-bottom: 0
+
+    img
+      @extends $drop-shadow
+      border: 1px solid white
+      width: 100%
+
+    .goofy
+      position: absolute
+      z-index: 1
+
+    .nice
+      position: relative
+      opacity: 1
+      transition: opacity 0.4s ease
+      z-index: 2
+
+      &:hover
+        opacity: 0
+
+    .image-container
+      margin: 0 auto
+      width: 75%
+      position: relative
+
+    .name
+    .relation
+      display: block
+      margin: 0.5em 0
+      letter-spacing: normal
+
+    .name
+      @extends $fontSubHeading
+      font-size: 3.7em
+
+    .relation
+      font-size: 2em
+      line-height: 1.2em
+      font-weight: lighter

@@ -16,6 +16,41 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    contentSecurityPolicy: {
+      'default-src': [
+        "'self'"
+      ].join(' '),
+
+      'font-src': [
+        "'self'",
+        "http://fonts.gstatic.com"
+      ].join(' '),
+
+      'img-src': "'self'",
+
+      'script-src': [
+        "'self'",
+        "'unsafe-eval'",
+        "'unsafe-inline'"
+      ].join(' '),
+
+      'style-src': [
+        "'self'",
+        "'unsafe-inline'",
+        'http://fonts.googleapis.com',
+        'http://fonts.gstatic.com'
+      ].join(' '),
+
+      'frame-src': [
+        "'self'",
+        'https://www.google.com'
+      ].join(' '),
+
+      'media-src': "'self'",
+
+      'report-uri': 'http://www.conradandkristina.com/api/csp-report'
     }
   };
 

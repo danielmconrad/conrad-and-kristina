@@ -1,0 +1,16 @@
+$mqWidthPhone = 567px
+$mqWidthLandscapePhone = 568px
+$mqWidthUpToTablet = 767px
+$mqWidthTablet = 768px
+$mqWidthUpToDesktop = 1024px
+$mqWidthDesktop = 1024px
+$mqWidthLargeDesktop = 1280px
+
+// Figure out a way to make the subtract work instead of hardcoded values
+$mqPhone = s('all and (max-width: %s)', $mqWidthPhone)
+$mqLandscapePhone = s('all and (min-width: %s)', $mqWidthLandscapePhone)
+$mqUpToTablet = s('all and (max-width: %s)', $mqWidthUpToTablet)
+$mqTablet = s('all and (min-width: %s)', $mqWidthTablet)
+$mqUpToDesktop = s('all and (max-width: %s)', $mqWidthUpToDesktop)
+$mqDesktop = s('all and (min-width: %s)', $mqWidthDesktop)
+$mqLargeDesktop = s('all and (min-width: %s)', $mqWidthLargeDesktop)

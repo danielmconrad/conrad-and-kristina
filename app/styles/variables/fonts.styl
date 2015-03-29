@@ -1,0 +1,41 @@
+@import url('http://fonts.googleapis.com/css?family=PT+Sans+Narrow')
+
+@font-face
+  font-family: 'bebas_neuelight'
+  src: url('/fonts/BebasNeue Light-webfont.eot')
+  src: url('/fonts/BebasNeue Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/BebasNeue Light-webfont.woff2') format('woff2'),
+       url('/fonts/BebasNeue Light-webfont.woff') format('woff'),
+       url('/fonts/BebasNeue Light-webfont.ttf') format('truetype'),
+       url('/fonts/BebasNeue Light-webfont.svg#bebas_neuelight') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'respective_2.0regular'
+  src: url('/fonts/Respective_2.0-webfont.eot')
+  src: url('/fonts/Respective_2.0-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Respective_2.0-webfont.woff2') format('woff2'),
+       url('/fonts/Respective_2.0-webfont.woff') format('woff'),
+       url('/fonts/Respective_2.0-webfont.ttf') format('truetype'),
+       url('/fonts/Respective_2.0-webfont.svg#respective_2.0regular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+$fontRespective
+  font-family: 'respective_2.0regular', Helvetica Neue, Arial, sans-serif
+
+$fontBebas
+  font-family: 'bebas_neuelight', Helvetica Neue, Arial, sans-serif
+
+$fontPTSansNarrow
+  font-family: 'PT Sans Narrow', Helvetica Neue, Arial, sans-serif
+
+$fontHeading
+  @extends $fontRespective
+
+$fontSubHeading
+  @extends $fontBebas
+
+$fontBody
+  @extends $fontPTSansNarrow

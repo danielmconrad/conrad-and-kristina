@@ -1,0 +1,110 @@
+@import "../variables"
+
+header
+  padding: 12em 0 0
+
+  .phone
+    @media $mqLandscapePhone
+      display: none
+
+  .not-phone
+    display: none
+
+    @media $mqLandscapePhone
+      display: inline
+
+h1, h2
+  @extends $fontHeading
+  color: $colorGrey
+  line-height: 0.2em
+  margin: 0.37em 0 0.2em
+  position: relative
+  z-index: 2
+  font-size: 9em
+
+  @media $mqLandscapePhone
+    font-size: 12em
+
+  @media $mqTablet
+    font-size: 15em
+
+  @media $mqDesktop
+    font-size: 20em
+
+h2
+  font-size: 8em
+
+  @media $mqLandscapePhone
+    font-size: 10em
+
+  @media $mqTablet
+    font-size: 12em
+
+  @media $mqDesktop
+    font-size: 15em
+
+h3
+  @extends $fontSubHeading
+  color: $colorGreyLight
+  letter-spacing: 0.28em
+  margin: 3.2em 0 4em
+  font-size: 1.7em
+
+  @media $mqLandscapePhone
+    font-size: 1.9em
+    margin: 0.2em 0 4em
+
+  @media $mqTablet
+    font-size: 2.4em
+
+  @media $mqDesktop
+    font-size: 3.2em
+
+nav
+  padding: 0.5em 0 2em
+  font-size: 1.7em
+
+  @media $mqLandscapePhone
+    font-size: 2.0em
+
+  @media $mqTablet
+    font-size: 2.2em
+
+  @media $mqDesktop
+    font-size: 2.5em
+
+  span:before
+    @media $mqLandscapePhone
+      content: '·'
+      display: inline-block
+
+  a
+    text-decoration: none
+    color: $colorGreyLightest
+    padding: 0.2em 1em
+    display: block
+
+    @media $mqLandscapePhone
+      display: inline-block
+
+    &:hover
+      color: $colorGrey
+
+.waldorf
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  -webkit-box-shadow: inset 0 0 6em 0 rgba(0,0,0,0.75)
+  -moz-box-shadow: inset 0 0 6em 0 rgba(0,0,0,0.75)
+  box-shadow: inset 0 0 6em 0 rgba(0,0,0,0.75)
+  background-image: url('/images/waldorf-background-blueish.jpg')
+  height: 20em
+
+  @media $mqLandscapePhone
+    height: 27em
+
+  @media $mqTablet
+    height: 33em
+
+  @media $mqDesktop
+    height: 40em

@@ -1,38 +1,4 @@
-@import "./fonts"
-@import "./colors"
-
-html
-body
-  width: 100%
-  height: 100%
-  font-size: 10px
-  margin: 0
-  padding: 0
-
-body
-  background: $colorMain
-  @extends $fontPenna
-  color: $colorMainDark
-
-.banner
-  background: white
-  box-shadow: 0 0 9em 0 rgba(0,0,0,0.2)
-  margin: 8em
-  padding: 5em
-  text-align: center
-
-h1
-  @extends $fontQuickier
-  font-size: 11em
-  font-weight: normal
-  margin: 0.5em
-  padding: 0.5em
-  border-bottom: 1px solid #f0eeea
-
-h2
-  font-size: 4em
-  font-weight: normal
-  line-height: 1.37em
-
-p
-  font-size: 3em
+@import "./base"
+@import "./sections/header"
+@import "./sections/wedding-party"
+@import "./sections/guest-info"
