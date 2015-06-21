@@ -12,7 +12,7 @@ body
 
 body
   @extends $fontBody
-  color: $colorGreyLight
+  color: $colorGreyDarkest
   background: $colorBackground
   font-size: 10px
   text-align: center
@@ -20,6 +20,7 @@ body
 h1, h2, h3, h4, h5, h6
   font-weight: normal
   text-shadow: 1px 1px white
+  letter-spacing: normal
 
 a
   transition: color 0.4s ease
@@ -27,17 +28,8 @@ a
 p
   font-weight: lighter
   text-align: left
-  text-indent: 1em
-  font-size: 2em
-
-  @media $mqLandscapePhone
-    font-size: 2.2em
-
-  @media $mqTablet
-    font-size: 2.6em
-
-  @media $mqDesktop
-    font-size: 3.2em
+  font-size: 2.5em
+  letter-spacing: normal
 
 section
   padding: 12em 0
@@ -60,7 +52,13 @@ section
 .text-center p
   text-align: center
 
-$drop-shadow
-  -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.08)
-  -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.08)
-  box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.08)
+.text-left
+  text-align: left
+
+.image-container
+  img
+    width: 100%
+
+.pure-g
+.pure-g [class*=pure-u]
+  @extends $fontBody

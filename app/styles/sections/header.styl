@@ -1,7 +1,15 @@
 @import "../variables"
 
 header
-  padding: 12em 0 0
+  @media $mqLargeDesktop
+    min-height: 90vh
+
+  .constrainer
+    padding-top: 12em
+    padding-bottom: 12em
+
+    @media $mqLargeDesktop
+      padding-top: 18em
 
   .phone
     @media $mqLandscapePhone
@@ -80,7 +88,7 @@ nav
 
   a
     text-decoration: none
-    color: $colorGreyLightest
+    color: $colorGrey
     padding: 0.2em 1em
     display: block
 
@@ -88,7 +96,7 @@ nav
       display: inline-block
 
     &:hover
-      color: $colorGrey
+      color: $colorGreyDarkest
 
 .waldorf
   background-size: cover
