@@ -1,12 +1,32 @@
 @import "../variables"
 
 .guest-info
-  iframe
-    width: 100%
-    border: 1px solid white
-    margin-bottom: 3em
-    @extends $drop-shadow
+  .map-container
+    position: relative
 
+    iframe
+      width: 100%
+      height: 500px
+      border: 1px solid white
+      margin-bottom: 3em
+      @extends $drop-shadow
+
+    .overlay
+      position: absolute
+      cursor: pointer
+      min-height: 500px
+      width: 100%
+      top: 0
+      background: rgba(255, 255, 255, 0.8)
+
+      @media $mqTablet
+        display: none
+
+      span
+        padding: 5.5em 0 0
+        letter-spacing: normal
+        font-size: 3em
+        display: inline-block
 
   .hotel-info
     letter-spacing: normal
